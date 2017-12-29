@@ -1,0 +1,39 @@
+	<!-- Navbar fixed top area -->
+	<div class="ui medium inverted teal menu">
+		<div class="left menu">
+			<a href="/" class="icon item logo" id="trigger"><i class="sidebar icon"></i></a>
+      <%= link_to root_path, class: "item" do %><i class='home icon'></i> Home<% end %>
+			<a href="/gigs" class="item">Browse Gigs &raquo;</a>
+      <a href="/advsearch" class="item">Search Gigs &raquo;</a>
+			<a href="/blog" class="mini item">Blog</a>
+			<a href="/portfolio" class="mini item">Portfolio</a>
+			<a href="/about" class="mini item">About</a>
+		</div><!-- ./left -->
+		<div class="item"></div>
+		
+		<div class="ui mini fluid aligned middle category search item">
+          <div class="ui icon input">
+          <%= form_tag gigs_path, method: :get, :class => 'ui icon input prompt' do %>
+          <i class='search icon'></i>	
+          <%= text_field_tag :term, params[:term], placeholder: 'Search', class: 'prompt' %>
+          <!-- #, html: => {<i class='search icon'></i>} %> -->
+          <%#= submit_tag 'Search', name: nil, class:'' %>
+          <% end %>  
+            <!--<input class="" type="text" placeholder="Search...">-->
+          </div>
+      	</div><!-- ./search -->
+      
+      <div class="right menu">
+      <% if user_signed_in? %>
+      	<%= link_to 'New GIG &raquo;'.html_safe, new_gig_path, :class=>'item'  %>
+      	<%= link_to current_user.username, edit_user_registration_path, {:class=>'mini item', :style => 'color:#ffffaa;font-style:italic;font-weight: bold;'} %>
+        <%= link_to 'Sign out', destroy_user_session_path, :method => :delete, :class=>'mini item' %>
+    <% else %>
+    	<div class='item' style='color:#ffff00;'><b><i><small>Guest</small></i></b></div>
+        <%= link_to 'Sign up', new_user_registration_path, :class=>'item' %>
+        <%= link_to 'Sign in', new_user_session_path, :class=>'item' %>
+    <% end %> 
+      </div>
+	</div>
+	<!-- Collapse Navbar Menu -->
+	<div class="ui fluid vertical menu collapse"></div>

@@ -1,0 +1,125 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #ffffcc;
+  font-family: sans-serif;
+  height: 100%;
+  padding: 1px;
+  margin: 0px;
+}
+.main {
+    height: 100%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h h h h h h h"
+        "m m c c c c c c c c c c c c c c c c"
+        "f f f f f f f f f f f f f f f f f f";
+}
+.header {
+    grid-area: h;
+}
+.menu {
+    grid-area: m;
+}
+.content {
+    grid-area: c;
+}
+.footer {
+    grid-area: f;
+}
+/************************************************************/
+.main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffffdd;
+}
+.main > div:nth-child(1n) {
+  background-color: var(--grey15);  /* HEADER TEAL */
+  color: var(--grey05);
+  padding:0;
+  margin: 0;
+}
+.main > div:nth-child(2n) {
+  background-color: var(--teal11); /* MENU TEAL */
+  color: var(--teal03);
+  font-size: 95%;    
+}
+.main > div:nth-child(3n) {
+  background-color: #ffffdd;
+  color: #004c4c;
+}
+.main > div:nth-child(4n) {
+  background-color: #ff6f69;
+  color: var(--red02);
+  font-size: 95%;  
+}
+.main > div:nth-child(5n) {
+  background-color: #ffcc5c;
+}
+.container {
+  width: 95%;
+}
+.content h6 {
+  color: var(--teal10);
+}
+.teal h2 h6 {
+  color: var(--teal10);
+}
+div.grey {
+  color: var(--grey15);
+}
+div.middle{
+  text-align: center;
+}
+span.middle {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.post {
+  color: var(--teal10);
+  border-bottom: 1px solid var(--teal03);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/*********************** BULMA *****************************************/
+$divider-background-color: transparent;
+$divider-color:  var(--teal06);
+/************************ CSS-GRID ****************************************/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  --gap: 20;
+  grid-gap: calc(var(--gap) * 2px);
+  align-items: center;
+  padding: 20px;
+}
+/* Define box vars */
+.box {
+  --box-bg-color: var(--grey01);
+  --box-main-color: var(--teal06);
+  --box-padding: 5px 10px;
+  --box-shadow-h-offset: 10px;
+  --box-shadow-v-offset: 5px;
+  --box-shadow-blur: 5px;
+}
+.box {
+  background-color: var(--box-bg-color);
+  padding: var(--box-padding);
+  border: 1px solid var(--box-main-color);
+  box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset)
+    var(--box-shadow-blur) var(--box-main-color);
+  font-size: 90%;
+}
+.box h2 {
+  color: var(--box-main-color);
+}
+.box p {
+  /* --box-main-color: #555;
+  color: var(--box-main-color); */
+  color: var(--box-p-color, #555);
+}

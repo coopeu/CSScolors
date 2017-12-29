@@ -1,0 +1,12 @@
+<div class="container is-fluid">
+	<% @posts.each do |p| %>
+	<div class='post'>
+		<div class='columns'>
+			<div class='column is-one-quarter'><h6 class='teal'><%= p.title %></h6>
+				<p class='is-size-7'>created <%= time_ago_in_words(p.created_at) %> ago</p>
+			</div>
+			<div class="column has-text-justified"><p class='is-size-5'><%= p.body %></p></div>	
+		</div>
+	</div> 
+	<% end %>
+</div>

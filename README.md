@@ -64,8 +64,8 @@ Sample of teal scale in the root.css file:
 - Send an email
 
 ### LINKS
-SPECS: https://www.w3.org/TR/2011/REC-css3-color-20110607/
-Live DEMO (in development): http://cabrer.me:8888/posts
+- SPECS: https://www.w3.org/TR/2011/REC-css3-color-20110607/
+- DEMO (in development): http://cabrer.me:8888/posts
 
 #### BACK-END
 OVZ6 SERVER (Amsterdam)

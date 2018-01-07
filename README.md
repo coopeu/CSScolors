@@ -24,8 +24,34 @@ Import and integrate root.css in your application. In RoR in your application.cc
 ### EXAMPLES 
 It's simply,  e.g. choose for a DIV element the background color and tone for instance (violet08) as background-color:var(--violet08). 
 In case that you want the web result darkering a bit more change for --viole09 or violet10 and otherwise if you want lighting reduce this number to violet07 or violet 06.
+
 Sample in a CSS file:
 body {
     background-color:var(--teal04);
     color:var(--teal20);
 }
+
+Smaple of teal scale in the root.css file:
+
+/* TEALS */ 
+--teal19 : #000c0c;
+--teal18 : #001919;
+--teal17 : #002626;
+--teal16 : #003333;
+--teal15 : #004040;
+--teal14 : #004c4c;
+--teal13 : #005959;
+--teal12 : #006666;
+--teal11 : #007373;
+--teal10 : #008080;
+--teal09 : #198c8c;
+--teal08 : #329999;
+--teal07 : #4ca6a6;
+--teal06 : #66b2b2;
+--teal05 : #7fbfbf;
+--teal04 : #99cccc;
+--teal03 : #b2d8d8;
+--teal02 : #cce5e5;
+--teal01 : #e5f2f2;
+
+

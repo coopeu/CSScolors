@@ -1,5 +1,6 @@
-## INTEGRATION OF RGB COLORS AS CSS VARIABLES FOR WEB DESIGN AND DEVELOPMENT  
-### OVZ6 SERVER (Amsterdam)
+## RGB COLORS AS CSS VARIABLES FOR WEB DESIGN AND DEVELOPMENT  
+### BACK-END
+OVZ6 SERVER (Amsterdam)
 Debian GNU/Linux 9 (stretch), Linux 4.9.0-1-amd64, x86-64
 Apache/2.4.25 (Debian)
 Mysql 15.1 Distrib 10.1.26-MariaDB, debian-linux-gnu (x86_64), readline 5.2
@@ -8,8 +9,10 @@ rvm 1.29.3
 ruby 2.4.3p205 (2017-12-14 revision 61247) [x86_64-linux] 
 Rails 5.1.4
 yarn v1.3.2
-npm 3.10.10 
-## APP 
+npm 3.10.10
+### IDE
+SmarTTY. WinSCP. SublimeText. UltraEdit. MySQL WorkBench 6.3. PhpMyAdmin. PhotoShop. ... 
+### APP description 
 Complex CSS grid layout using CSS variables for main color scales (:root file), integrating Bulma CSS components for a simple blogging RoR website.
 
 # COLORS
@@ -18,7 +21,7 @@ Complex CSS grid layout using CSS variables for main color scales (:root file), 
 Never more, you will have to use complicated RGB codes to find the suitable color and tone, picking or consulting the colors, and copying and pasting the RGB codes to the CSS files.
 
 ### SOLUTION 
-The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsies, greens, olives, teals/turquoises, limes, blues, navies, sky,...) that included +300 colors, starts at 00 close to white and ends close to black.
+The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky,...) that included +300 colors, starts at 00 close to white and ends close to black.
 
 Import and integrate root.css in your application. In RoR in your application.ccs or in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all, for using easily and quickly RGB colors in web design, saving time and speeding up the design and front-end development. 
 
@@ -35,7 +38,6 @@ div {
     color:var(--teal20);
 
     border: 1px solid var(--teal 08);
-
 }
 
 Sample of teal scale in the root.css file:
@@ -63,12 +65,12 @@ Sample of teal scale in the root.css file:
 
 ### Contributing
 
-Fork it
+- Fork it
 
-- Create your feature branch (git checkout -b my-new-feature)
-- Commit your changes (git commit -am 'Add some feature')
-- Push to the branch (git push origin my-new-feature)
-- Create new Pull Request
+    - Create your feature branch (git checkout -b my-new-feature)
+    - Commit your changes (git commit -am 'Add some feature')
+    - Push to the branch (git push origin my-new-feature)
+    - Create new Pull Request
 
-Post an issue
+- Post an issue
 

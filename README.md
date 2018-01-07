@@ -1,19 +1,7 @@
 ## RGB COLORS AS CSS VARIABLES FOR WEB DESIGN AND DEVELOPMENT  
-### BACK-END
-OVZ6 SERVER (Amsterdam)
-Debian GNU/Linux 9 (stretch), Linux 4.9.0-1-amd64, x86-64
-Apache/2.4.25 (Debian)
-Mysql 15.1 Distrib 10.1.26-MariaDB, debian-linux-gnu (x86_64), readline 5.2
-Phusion Passenger 5.1.12
-rvm 1.29.3
-ruby 2.4.3p205 (2017-12-14 revision 61247) [x86_64-linux] 
-Rails 5.1.4
-yarn v1.3.2
-npm 3.10.10
-### IDE
-SmarTTY. WinSCP. SublimeText. UltraEdit. MySQL WorkBench 6.3. PhpMyAdmin. PhotoShop. ... 
-### APP description 
-Complex CSS grid layout using CSS variables for main color scales (:root file), integrating Bulma CSS components for a simple blogging RoR website.
+
+#### APP description 
+Complex CSS GRID layouts examples using CSS variables for main color scales (:root file), integrating Bulma CSS components for a simple blogging Ruby on Rails website.
 
 # COLORS
 
@@ -73,4 +61,21 @@ Sample of teal scale in the root.css file:
     - Create new Pull Request
 
 - Post an issue
+- Send an email
+
+### LINKS
+SPECS: https://www.w3.org/TR/2011/REC-css3-color-20110607/
+Live DEMO (in development): http://cabrer.me:8888/posts
+
+#### BACK-END
+OVZ6 SERVER (Amsterdam)
+Debian GNU/Linux 9 (stretch), Linux 4.9.0-1-amd64, x86-64
+Apache/2.4.25 (Debian)
+Mysql 15.1 Distrib 10.1.26-MariaDB, debian-linux-gnu (x86_64), readline 5.2
+Phusion Passenger 5.1.12
+rvm 1.29.3
+ruby 2.4.3p205 (2017-12-14 revision 61247) [x86_64-linux] 
+Rails 5.1.4
+yarn v1.3.2
+npm 3.10.10
 

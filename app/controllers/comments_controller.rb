@@ -17,11 +17,9 @@ class PostsController < ApplicationController
 	def show
 		@post = Post.where(id: params[:id]).first
 	end
-
 	def edit
 		@post = Post.where(id: params[:id]).first
 	end
-
 	def update
 		@post = Post.where(id: params[:id]).first
 		if @post.update_attributes(post_params)

@@ -1,0 +1,11 @@
+<div class="container is-fluid">
+	<div class='post'>
+		<h6 class='teal'><%= @post.title %></h6>
+		<p class='is-size-7'>created <%= time_ago_in_words(@post.created_at) %> ago</p>
+		<p class='is-size-5'><%= @post.body %></p>
+		<p>
+			<%= link_to 'Edit', edit_post_path(@post), class: 'small button is-primary is-outlined' %>
+				<%= link_to 'Delete', post_path(@post), method: :delete, class: 'small button is-danger is-outlined' %>
+		</p>
+	</div>
+</div>

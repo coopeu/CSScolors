@@ -11,6 +11,8 @@ Never more, you will have to use complicated RGB codes to find the suitable colo
 ### SOLUTION 
 The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky,...) that included +300 colors, starts at 00 close to white and ends close to black.
 
+This extends the list of basic and extended W3C colors keywords is: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. 
+
 Import and integrate root.css in your application. In RoR in your application.ccs or in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all, for using easily and quickly RGB colors in web design, saving time and speeding up the design and front-end development. 
 
 ### EXAMPLES 

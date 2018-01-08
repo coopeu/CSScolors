@@ -9,11 +9,12 @@ Complex CSS GRID layouts examples using CSS variables for main color scales (:ro
 Never more, you will have to use complicated RGB codes to find the suitable color and tone, picking or consulting the colors, and copying and pasting the RGB codes to the CSS files.
 
 ### SOLUTION 
-The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky,...) that included +300 colors, starts at 01 close to white and ends close to black, jumping in small tone steps from light to dark.
+The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky, pinks,...) that included +300 RGB colors, starts at 01 close to white and ends close to black, jumping in small tone steps from light to dark.
 
-This extends the list of basic and extended W3C colors keywords is: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. 
+This extends the W3C list of basic and extended colors keywords: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white and yellow, for using easily and quickly RGB colors codes by means of CSS variables, saving time and speeding up the web design and front-end development. 
 
-Import and integrate root.css in your application. In RoR in your application.ccs or in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all, for using easily and quickly RGB colors in web design, saving time and speeding up the design and front-end development. 
+### INSTALLATION
+Import and integrate root css file at /app/assets/stylesheets/root.scss in your application. If RoR import in your application.css or save in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all. 
 
 ### EXAMPLES 
 It's simply,  e.g. choose for a DIV element the background color and tone for instance (violet08) as background-color:var(--violet08). 

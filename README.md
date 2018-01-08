@@ -9,7 +9,7 @@ Complex CSS GRID layouts examples using CSS variables for main color scales (:ro
 Never more, you will have to use complicated RGB codes to find the suitable color and tone, picking or consulting the colors, and copying and pasting the RGB codes to the CSS files.
 
 ### SOLUTION 
-The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky,...) that included +300 colors, starts at 00 close to white and ends close to black.
+The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky,...) that included +300 colors, starts at 01 close to white and ends close to black, jumping in small tone steps from light to dark.
 
 This extends the list of basic and extended W3C colors keywords is: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. 
 
@@ -42,7 +42,7 @@ Sample of teal scale in the root.css file:
 --teal13 : #005959;
 --teal12 : #006666;
 --teal11 : #007373;
---teal10 : #008080;
+--teal10 : #008080; /* teal */
 --teal09 : #198c8c;
 --teal08 : #329999;
 --teal07 : #4ca6a6;
@@ -67,6 +67,7 @@ Sample of teal scale in the root.css file:
 
 ### LINKS
 - SPECS: https://www.w3.org/TR/2011/REC-css3-color-20110607/
+- SCALES: http://www.colorhexa.com/800080
 - DEMO (in development): http://cabrer.me:8888/posts
 
 #### BACK-END

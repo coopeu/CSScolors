@@ -24,9 +24,8 @@ body {
   "ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
   "ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
 	"ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
-  "an an an an an an an an an an an an an an an an an an an"
-	"a1 a1 a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
-	"a1 a1 a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+	"a1 a1 an an an an an a2 a2 a2 a2 a2 a3 a3 a3 a3 a3 a3 a3"
+	"a1 a1 an an an an an a2 a2 a2 a2 a2 a3 a3 a3 a3 a3 a3 a3"
   "fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo"
 	;
   width: 100%;
@@ -44,7 +43,9 @@ body {
   "an an an ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
   "an an an ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
 	"a2 a2 a2 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
-	"a2 a2 a2 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+  "a2 a2 a2 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+	"a3 a3 a3 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+  "a3 a3 a3 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
 	"fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo";
   width: 100%;
   max-width: 960px;
@@ -69,16 +70,21 @@ header {
 }
 main {
   grid-area: ma;
+  color:var(--olive11);
+  text-align: center;
+  font-weight: 900;
 }
 .central {
   display:grid;
   grid-template-columns: repeat(2,50%);
-  justify-items: center;
+  text-align: justify;
 }
 article {
-	background-color: var(--olive10);
+	background-color: var(--olive12);
+  color:var(--olive20);
 	border: 3px solid var(--sky05);
 	padding: 6px;
+  font-weight: 600;
 }
 article h3 {
 	margin: 0 0 10px 5px ;
@@ -88,7 +94,7 @@ aside1 {
 	grid-area: a1;
   background-color:var(--olive13);
   color:var(--sea00);
-  font-weight: bold;
+  font-weight: bold; /*700*/
   padding-left: 10px;
 }
 asidenav {
@@ -100,7 +106,16 @@ asidenav {
 aside2 {
 	grid-area: a2;
   background-color:var(--violet16);
-  color:var(--violet05);
+  color:var(--teal06);
+  padding: 6px;
+  font-weight: bold; /*700*/
+}
+aside3 {
+  grid-area: a3;
+  background-color:var(--olive16);
+  color:var(--violet06);
+  padding: 6px;
+  font-weight: bold; /*700*/
 }
 footer {
 	grid-area: fo;

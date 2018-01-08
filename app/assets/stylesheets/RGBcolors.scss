@@ -134,7 +134,6 @@
 --pink03:#ffd4db;
 --pink02:#ffe7eb;
 --pink01:#fffbfc;
-
 /* BLUE */
 --blue25:#000014;  
 --blue24:#000027;  
@@ -148,7 +147,7 @@
 --blue16:#0000c4;  
 --blue15:#0000d8;  
 --blue14:#0000eb;  
---blue13:#0000ff;  
+--blue13:#0000ff;  /* blue */ 
 --blue12:#1414ff;  
 --blue11:#2727ff;  
 --blue10:#3b3bff;  
@@ -161,7 +160,15 @@
 --blue03:#c4c4ff;  
 --blue02:#d8d8ff;  
 --blue01:#ebebff; 
- /* NAVY */
+ /* NAVY #000080 */ 
+--navy06:#000034;
+--navy05:#00004d;
+--navy04:#000067;
+--navy03:#000080; /* navy */
+--navy02:#00009a;
+--navy01:#0000b3;
+--navy00:#0000cd;
+ /* SEA */
 --sea13:#00050a;
 --sea12:#000f1e;
 --sea11:#001932;
@@ -505,7 +512,6 @@
  	 	mistyrose	#FFE4E1	255,228,225
  	 	moccasin	#FFE4B5	255,228,181
  	 	navajowhite	#FFDEAD	255,222,173
- 	 	navy	#000080	0,0,128
  	 	oldlace	#FDF5E6	253,245,230
  	 	olivedrab	#6B8E23	
  	 	orangered	#FF4500	255,69,0

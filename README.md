@@ -13,8 +13,8 @@ The tones of each of the several color scales (grays, yellows, oranges, reds, ma
 
 This extends the W3C list of basic and extended colors keywords: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white and yellow, for using easily and quickly RGB colors codes by means of CSS variables, saving time and speeding up the web design and front-end development. 
 
-### INSTALLATION
-Import and integrate root css file at /app/assets/stylesheets/root.scss in your application. If RoR import in your application.css or save in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all. 
+### INSTALLATION AND INSTRUCTIONS
+Import and integrate root css file at /app/assets/stylesheets/root.scss in your application. If RoR import in your application.css or save in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all. Look at the file to know the scale names (grays, pinks, browns,...) for only remembering them when you're choosing a CSS element color (color:var(--yellow10;) or you're personalising your palette or web theme. Change +1/-1 the Css variable number for adjusting the color tone, +1 darker (--yellow11) and -1 lighter (--yellow09).
 
 ### EXAMPLES 
 It's simply,  e.g. choose for a DIV element the background color and tone for instance (violet08) as background-color:var(--violet08). 

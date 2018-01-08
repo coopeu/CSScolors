@@ -65,7 +65,7 @@ header {
 	justify-items: center;
 }
 .grid p {
-	color: var(--sea01);
+	color: var(--sea00);
 }
 main {
   grid-area: ma;
@@ -77,8 +77,8 @@ main {
 }
 article {
 	background-color: var(--olive10);
-	border: 3px solid var(--sky03);
-	padding: 5px;
+	border: 3px solid var(--sky05);
+	padding: 6px;
 }
 article h3 {
 	margin: 0 0 10px 5px ;
@@ -86,13 +86,21 @@ article h3 {
 }
 aside1 {
 	grid-area: a1;
-  background-color:var(--olive18);
+  background-color:var(--olive13);
+  color:var(--sea00);
+  font-weight: bold;
+  padding-left: 10px;
 }
 asidenav {
-	grid-area: an;
+	grid-area: an;  
+  background-color:var(--teal12);
+  color:var(--teal05);
+  padding: 6px;
 }
 aside2 {
 	grid-area: a2;
+  background-color:var(--violet16);
+  color:var(--violet05);
 }
 footer {
 	grid-area: fo;
@@ -103,8 +111,8 @@ footer {
 }
 /* menu base styles */
 .footnav{
-  background-color: var(--sea09);
   justify-items:center;
+  background-color:var(--olive18);
 }
 .footnav ul{
   list-style-type: none;
@@ -142,8 +150,8 @@ a.fb{
   width:100%;
 }
 .topnav {
-    background-color:var(--sea09);
-    border-bottom: 1px solid var(--sky05);
+    background-color:var(--teal15);
+    border-bottom: 1px solid var(--teal05);
     text-align: right;
     height: auto;
     line-height: auto;

@@ -1,0 +1,24 @@
+<div class="container is-fluid">
+	<%= form_for @post do |f| %>
+	  <div class='field'>
+	    <label class="label"><%= f.label :title %></label>
+	    <div class="control">
+	    	<%= f.text_field :title, class: 'control' %>
+	    </div>
+	  </div>
+	  <div class='field'>
+	     <label class="label"><%= f.label :body %></label>
+			<div class="control">
+				<%= f.text_area :body, placeholder: 'The title is...', class: 'textarea' %>				
+			</div>
+	  </div>
+		<div class="field is-grouped">
+		  <div class="control">
+		    <%= f.submit "Save", class: "button is-primary" %>
+		  </div>
+		  <div class="control">
+		    <button class="button is-text">Cancel</button>
+		  </div>
+		</div>
+	<% end %>
+</div>

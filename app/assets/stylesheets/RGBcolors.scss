@@ -1,0 +1,554 @@
+* {
+/* grays #808080;  */
+--gray27: #000000; /* black */
+--gray26: #020202; 
+--gray25: #0c0c0c; 
+--gray24: #161616; 
+--gray23: #1f1f1f; 
+--gray22: #292929; 
+--gray21: #333333; 
+--gray20: #3d3d3d; 
+--gray19: #474747; 
+--gray18: #505050; 
+--gray17: #5a5a5a; 
+--gray16: #646464; 
+--gray15: #6e6e6e; 
+--gray14: #787878; 
+--gray13: #818181; /* gray */
+--gray12: #8b8b8b; 
+--gray11: #959595; 
+--gray10: #9f9f9f; 
+--gray09: #a9a9a9; 
+--gray08: #b3b3b3; 
+--gray07: #bcbcbc; 
+--gray06: #c6c6c6; 
+--gray05: #d0d0d0; 
+--gray04: #dadada; 
+--gray03: #e4e4e4; 
+--gray02: #ededed; 
+--gray01: #f7f7f7;
+--gray00: #ffffff; /* white */ 
+ /* YELLOWS ffff00 */  
+--yellow27: #050500;  
+--yellow26: #191900;  
+--yellow25: #2c2c00;  
+--yellow24: #404000;  
+--yellow23: #545400;  
+--yellow22: #676700;  
+--yellow21: #7b7b00;  
+--yellow20: #8f8f00;  
+--yellow19: #a2a200;  
+--yellow18: #b6b600;  
+--yellow17: #c9c900;  
+--yellow16: #dddd00;  
+--yellow15: #f1f100;
+--yellow14: #ffff00; /* yellow */ 
+--yellow13: #ffff05;  
+--yellow12: #ffff19;  
+--yellow11: #ffff2c;  
+--yellow10: #ffff40;  
+--yellow09: #ffff54;  
+--yellow08: #ffff67;  
+--yellow07: #ffff7b;  
+--yellow06: #ffff8f;  
+--yellow05: #ffffa2;  
+--yellow04: #ffffb6;  
+--yellow03: #ffffc9;  
+--yellow02: #ffffdd;  
+--yellow01: #fffff1;
+/* ORANGE #FFA500 */
+--orange07:#ff6500;
+--orange06:#ff7b00;
+--orange05:#FF8C00; /* darkorange	*/
+--orange04:#ff9000;
+--orange03:#ffa500; /* orange */
+--orange02:#ffba00;
+--orange01:#ffd000;
+--orange00:#ffe500;
+/* GOLD */
+--gold06:#b39700;
+--gold05:#ccac00;
+--gold04:#e6c200;
+--gold03:#ffd700; /* gold */
+--gold02:#ffdb1a;
+--gold01:#ffdf33;
+--gold00:#ffe34d;	  
+/* RED */ 
+--red25:#140000;
+--red24:#270000;
+--red23:#3b0000;
+--red22:#4e0000;
+--red21:#620000;
+--red20:#760000;
+--red19:#890000;
+--red18:#9d0000;
+--red17:#b10000;
+--red16:#c40000;
+--red15:#d80000;
+--red14:#eb0000;
+--red13:#ff0000; /* red */
+--red12:#ff1414;
+--red11:#ff2727;
+--red10:#ff3b3b;
+--red09:#ff4e4e;
+--red08:#ff6262;
+--red07:#ff7676;
+--red06:#ff8989;
+--red05:#ff9d9d;
+--red04:#ffb1b1;
+--red03:#ffc4c4;
+--red02:#ffd8d8;
+--red01:#ffebeb;
+/* CRIMSON */
+--crimson07:#960e29;
+--crimson06:#ad102f;
+--crimson05:#c51236;
+--crimson04:#dc143c; /* crimson */
+--crimson03:#eb1f48;
+--crimson02:#ed365b;
+--crimson01:#ef4e6e;
+/* PINK  pink04 ffc0cb*/       
+--pink26:#0f0003;
+--pink25:#230006;
+--pink24:#37000a;
+--pink23:#4a000d;
+--pink22:#5e0010;
+--pink21:#720014;
+--pink20:#850017;
+--pink19:#99001b;
+--pink18:#ac001e;
+--pink17:#c00022;
+--pink16:#d40025;
+--pink15:#e70028;
+--pink14:#fb002c;
+--pink13:#ff0f39;
+--pink12:#ff2349;
+--pink11:#ff375a;
+--pink10:#ff4a6a;
+--pink09:#ff5e7a;
+--pink08:#ff728a;
+--pink07:#ff859a;
+--pink06:#ff99ab;
+--pink05:#ffacbb;
+--pink04:#ffc0cb; /* pink */
+--pink03:#ffd4db;
+--pink02:#ffe7eb;
+--pink01:#fffbfc;
+/* BLUE */
+--blue25:#000014;  
+--blue24:#000027;  
+--blue23:#00003b;  
+--blue22:#00004e;  
+--blue21:#000062;  
+--blue20:#000076;  
+--blue19:#000089;  
+--blue18:#00009d;  
+--blue17:#0000b1;  
+--blue16:#0000c4;  
+--blue15:#0000d8;  
+--blue14:#0000eb;  
+--blue13:#0000ff;  /* blue */ 
+--blue12:#1414ff;  
+--blue11:#2727ff;  
+--blue10:#3b3bff;  
+--blue09:#4e4eff;  
+--blue08:#6262ff;  
+--blue07:#7676ff;  
+--blue06:#8989ff;  
+--blue05:#9d9dff;  
+--blue04:#b1b1ff;  
+--blue03:#c4c4ff;  
+--blue02:#d8d8ff;  
+--blue01:#ebebff; 
+ /* NAVY #000080 */ 
+--navy06:#000034;
+--navy05:#00004d;
+--navy04:#000067;
+--navy03:#000080; /* navy */
+--navy02:#00009a;
+--navy01:#0000b3;
+--navy00:#0000cd;
+ /* SEA */
+--sea13:#00050a;
+--sea12:#000f1e;
+--sea11:#001932;
+--sea10:#002345;
+--sea09:#002c59;
+--sea08:#00366c;
+--sea07:#004080;
+--sea06:#004a94;
+--sea05:#0054a7;
+--sea04:#005dbb;
+--sea03:#0067ce;
+--sea02:#0071e2;
+--sea01:#007bf6;
+--sea00:#0a85ff;
+ /* SKY: */  
+--sky11:#1e8eff;
+--sky10:#3298ff;
+--sky09:#45a2ff;
+--sky08:#59acff;
+--sky07:#6cb6ff;
+--sky06:#80c0ff;
+--sky05:#94c9ff;
+--sky04:#a7d3ff;
+--sky03:#bbddff;
+--sky02:#cee7ff;
+--sky01:#f6faff; 
+ /*  GREEN  */  
+--green25:#001400; 
+--green24:#002700; 
+--green23:#003b00; 
+--green22:#004e00; 
+--green21:#006200; 
+--green20:#007600; 
+--green19:#008900; 
+--green18:#009d00; 
+--green17:#00b100; 
+--green16:#00c400; 
+--green15:#00d800; 
+--green14:#00eb00; 
+--green13:#00ff00; 
+--green12:#14ff14; 
+--green11:#27ff27; 
+--green10:#3bff3b; 
+--green09:#4eff4e; 
+--green08:#62ff62; 
+--green07:#76ff76; 
+--green06:#89ff89; 
+--green05:#9dff9d; 
+--green04:#b1ffb1; 
+--green03:#c4ffc4; 
+--green02:#d8ffd8; 
+--green01:#ebffeb;
+/* YELLOWGREEN #9acd32 */
+--yellowgreen00:#6c9023;            
+--yellowgreen00:#7ba428;            
+--yellowgreen00:#8bb92d;            
+--yellowgreen00:#9acd32;  /* yellowgreen */          
+--yellowgreen00:#a4d247;            
+--yellowgreen00:#aed75b;            
+--yellowgreen00:#b8dc70;
+/*  LIME  lime12 #bfff00 */	
+--lime24:#0f1400;
+--lime23:#1d2700;
+--lime22:#2c3b00;
+--lime21:#3b4e00;
+--lime20:#496200;
+--lime19:#587600;
+--lime18:#678900;
+--lime17:#769d00;
+--lime16:#84b100;
+--lime15:#93c400;
+--lime14:#a2d800;
+--lime13:#b0eb00;
+--lime12:#bfff00; /* lime */
+--lime11:#c4ff14;
+--lime10:#c9ff27;
+--lime09:#ceff3b;
+--lime08:#d3ff4e;
+--lime07:#d8ff62;
+--lime06:#ddff76;
+--lime05:#e1ff89;
+--lime04:#e6ff9d;
+--lime03:#ebffb1;
+--lime02:#f0ffc4;
+--lime01:#f5ffd8;
+--lime00:#faffeb;
+/* OLIVE olive15 #808000 */
+--olive20:#1e1e00; 
+--olive19:#323200; 
+--olive18:#454500; 
+--olive17:#595900; 
+--olive16:#6c6c00; 
+--olive15:#808000; /* olive */
+--olive14:#949400; 
+--olive13:#a7a700; 
+--olive12:#bbbb00; 
+--olive11:#cece00; 
+--olive10:#e2e200; 
+--olive09:#f6f600; 
+--olive08:#ffff0a; 
+--olive07:#ffff1e; 
+--olive06:#ffff32; 
+--olive05:#ffff45; 
+--olive04:#ffff59; 
+--olive03:#ffff6c; 
+--olive02:#ffff80; 
+--olive01:#ffff94; 
+--olive00:#ffffa7;
+/* TEALS 	teal10 #008080	 */ 
+--teal19 : #000c0c;
+--teal18 : #001919;
+--teal17 : #002626;
+--teal16 : #003333;
+--teal15 : #004040;
+--teal14 : #004c4c;
+--teal13 : #005959;
+--teal12 : #006666;
+--teal11 : #007373;
+--teal10 : #008080; /* teal */
+--teal09 : #198c8c;
+--teal08 : #329999;
+--teal07 : #4ca6a6;
+--teal06 : #66b2b2;
+--teal05 : #7fbfbf;
+--teal04 : #99cccc;
+--teal03 : #b2d8d8;
+--teal02 : #cce5e5;
+--teal01 : #e5f2f2;
+/* AQUA - CYAN */
+--aqua06:#00b3b3;
+--aqua05:#00cccc;
+--aqua04:#00e6e6;
+--aqua03:#00ffff; /* aqua/cyan */
+--aqua02:#1affff;
+--aqua01:#33ffff;
+--aqua00:#4dffff;
+/* AQUAMARINE */
+--aquamarine26:#000906;
+--aquamarine25:#001d13;
+--aquamarine24:#003120;
+--aquamarine23:#00442d;
+--aquamarine22:#00583a;
+--aquamarine21:#006b47;
+--aquamarine20:#007f54;
+--aquamarine19:#009361;
+--aquamarine18:#00a66e;
+--aquamarine17:#00ba7b;
+--aquamarine16:#00cd88;
+--aquamarine15:#00e195;
+--aquamarine14:#00f5a2;
+--aquamarine13:#09ffac;
+--aquamarine12:#1dffb3;
+--aquamarine11:#31ffba;
+--aquamarine10:#44ffc0;
+--aquamarine09:#58ffc7;
+--aquamarine08:#6bffcd;
+--aquamarine07:#7fffd4; /* aquamarine */
+--aquamarine06:#93ffdb;
+--aquamarine05:#a6ffe1;
+--aquamarine04:#baffe8;
+--aquamarine03:#cdffee;
+--aquamarine02:#e1fff5;
+--aquamarine01:#f5fffc;
+/* PURPLE  purple18 #800080*/
+--purple24:#140014;
+--purple23:#270027;
+--purple22:#3b003b;
+--purple21:#4e004e;
+--purple20:#620062;
+--purple19:#760076;
+--purple18:#800080; /* purple */
+--purple17:#9d009d;
+--purple16:#b100b1;
+--purple15:#c400c4;
+--purple14:#d800d8;
+--purple13:#eb00eb;
+--purple12:#ff00ff;
+--purple11:#ff14ff;
+--purple10:#ff27ff;
+--purple09:#ff3bff;
+--purple08:#ff4eff;
+--purple07:#ff62ff;
+--purple06:#ff76ff;
+--purple05:#ff89ff;
+--purple04:#ff9dff;
+--purple03:#ffb1ff;
+--purple02:#ffc4ff;
+--purple01:#ffd8ff;
+--purple00:#ffebff;			
+/*  VIOLET  */  
+--violet24:#1e041e;
+--violet23:#300630;
+--violet22:#410941;
+--violet21:#520b52;
+--violet20:#630e63;
+--violet19:#751075;
+--violet18:#861286;
+--violet17:#971597;
+--violet16:#a917a9;
+--violet15:#ba19ba;
+--violet14:#cb1ccb;
+--violet13:#dc1edc;
+--violet12:#e22ce2;
+--violet11:#e53de5;
+--violet10:#e74ee7;
+--violet09:#e95fe9;
+--violet08:#ec71ec;
+--violet07:#ee82ee;
+--violet06:#f093f0;
+--violet05:#f3a5f3;
+--violet04:#f5b6f5;
+--violet03:#f7c7f7;
+--violet02:#fad8fa;
+--violet01:#fceafc;
+--violet00:#fefbfe;
+/* MAROON-BROWN brown03	#A52A2A */  
+--brown13:#090202; 
+--brown12:#180606; 
+--brown11:#280a0a; 
+--brown10:#380e0e; 
+--brown09:#471212; 
+--brown08:#571616; 
+--brown07:#661a1a; 
+--brown06:#761e1e; 
+--brown05:#862222; 
+--brown04:#952626; 
+--brown03:#a52a2a; /* brown */
+--brown02:#b52e2e; 
+--brown01:#c43232; 
+/*  BEIGE  #F5F5DC */ 
+--beige25:#020200; 
+--beige24:#150f01; 
+--beige23:#271c02; 
+--beige22:#3a2903; 
+--beige21:#4c3704; 
+--beige20:#5f4405; 
+--beige19:#715106; 
+--beige18:#845e08; 
+--beige17:#976c09; 
+--beige16:#a9790a; 
+--beige15:#bc860b; 
+--beige14:#ce930c; 
+--beige13:#e1a10d; 
+--beige12:#f1ad10; 
+--beige11:#f2b322; 
+--beige10:#f3ba35; 
+--beige09:#f5c048; 
+--beige08:#f6c65a; 
+--beige07:#f7cd6d; 
+--beige06:#f8d37f; 
+--beige05:#f9da92; 
+--beige04:#fae0a4; 
+--beige03:#fbe6b7; 
+--beige02:#fcedc9; 
+--beige01:#fdf3dc; 
+--beige00:#fef9ef;
+
+
+/*
+		aliceblue	#F0F8FF;
+ 	 	antiquewhite	#FAEBD7;
+ 	 	azure	#F0FFFF;
+ 	 	bisque	#FFE4C4;
+ 	 	blanchedalmond	#FFEBCD	255,235,205
+ 	 	blueviolet	#8A2BE2	138,43,226
+ 	 	burlywood	#DEB887	222,184,135
+ 	 	cadetblue	#5F9EA0	95,158,160
+ 	 	chartreuse	#7FFF00	127,255,0
+ 	 	chocolate	#D2691E	210,105,30
+ 	 	coral	#FF7F50	255,127,80
+ 	 	cornflowerblue	#6495ED	100,149,237
+ 	 	cornsilk	#FFF8DC	255,248,220
+ 	 	darkblue	#00008B	0,0,139
+ 	 	darkcyan	#008B8B	0,139,139
+ 	 	darkgoldenrod	#B8860B	184,134,11
+ 	 	darkgray	#A9A9A9	169,169,169
+ 	 	darkgreen	#006400	0,100,0
+ 	 	darkgrey	#A9A9A9	169,169,169
+ 	 	darkkhaki	#BDB76B	189,183,107
+ 	 	darkmagenta	#8B008B	139,0,139
+ 	 	darkolivegreen	#556B2F	85,107,47
+ 	 	darkorchid	#9932CC	153,50,204
+ 	 	darkred	#8B0000	139,0,0
+ 	 	darksalmon	#E9967A	233,150,122
+ 	 	darkseagreen	#8FBC8F	143,188,143
+ 	 	darkslateblue	#483D8B	72,61,139
+ 	 	darkslategray	#2F4F4F	47,79,79
+ 	 	darkslategrey	#2F4F4F	47,79,79
+ 	 	darkturquoise	#00CED1	0,206,209
+ 	 	darkviolet	#9400D3	148,0,211
+ 	 	deeppink	#FF1493	255,20,147
+ 	 	deepskyblue	#00BFFF	0,191,255
+ 	 	dimgray	#696969	105,105,105
+ 	 	dodgerblue	#1E90FF	30,144,255
+ 	 	firebrick	#B22222	178,34,34
+ 	 	floralwhite	#FFFAF0	255,250,240
+ 	 	forestgreen	#228B22	34,139,34
+ 	 	gainsboro	#DCDCDC	220,220,220
+ 	 	ghostwhite	#F8F8FF	248,248,255
+ 	 	goldenrod	#DAA520	218,165,32
+ 	 	greenyellow	#ADFF2F	
+ 	 	honeydew	#F0FFF0	240,255,240
+ 	 	hotpink	#FF69B4	255,105,180
+ 	 	indianred	#CD5C5C	205,92,92
+ 	 	indigo	#4B0082	75,0,130
+ 	 	ivory	#FFFFF0	255,255,240
+ 	 	khaki	#F0E68C	240,230,140
+ 	 	lavender	#E6E6FA	230,230,250
+ 	 	lavenderblush	#FFF0F5	255,240,245
+ 	 	lawngreen	#7CFC00	124,252,0
+ 	 	lemonchiffon	#FFFACD	255,250,205
+ 	 	lightblue	#ADD8E6	173,216,230
+ 	 	lightcoral	#F08080	240,128,128
+ 	 	lightcyan	#E0FFFF	224,255,255
+ 	 	lightgoldenrodyellow	#FAFAD2	250,250,210
+ 	 	lightgray	#D3D3D3	211,211,211
+ 	 	lightgreen	#90EE90	144,238,144
+ 	 	lightgrey	#D3D3D3	211,211,211
+ 	 	lightpink	#FFB6C1	255,182,193
+ 	 	lightsalmon	#FFA07A	255,160,122
+ 	 	lightseagreen	#20B2AA	32,178,170
+ 	 	lightskyblue	#87CEFA	135,206,250
+ 	 	lightslategrey	#778899	
+ 	 	lightsteelblue	#B0C4DE	176,196,222
+ 	 	lightyellow	#FFFFE0	255,255,224
+ 	 	limegreen	#32CD32	50,205,50
+ 	 	linen	#FAF0E6	250,240,230
+ 	 	magenta	#FF00FF	255,0,255
+ 	 	maroon	#800000	128,0,0
+ 	 	mediumaquamarine	#66CDAA	102,205,170
+ 	 	mediumblue	#0000CD	0,0,205
+ 	 	mediumorchid	#BA55D3	186,85,211
+ 	 	mediumpurple	#9370DB	147,112,219
+ 	 	mediumseagreen	#3CB371	60,179,113
+ 	 	mediumslateblue	#7B68EE	123,104,238
+ 	 	mediumspringgreen	#00FA9A	0,250,154
+ 	 	mediumturquoise	#48D1CC	72,209,204
+ 	 	mediumvioletred	#C71585	199,21,133
+ 	 	midnightblue	#191970	25,25,112
+ 	 	mintcream	#F5FFFA	245,255,250
+ 	 	mistyrose	#FFE4E1	255,228,225
+ 	 	moccasin	#FFE4B5	255,228,181
+ 	 	navajowhite	#FFDEAD	255,222,173
+ 	 	oldlace	#FDF5E6	253,245,230
+ 	 	olivedrab	#6B8E23	
+ 	 	orangered	#FF4500	255,69,0
+ 	 	orchid	#DA70D6	218,112,214
+ 	 	palegoldenrod	#EEE8AA	238,232,170
+ 	 	palegreen	#98FB98	152,251,152
+ 	 	paleturquoise	#AFEEEE	175,238,238
+ 	 	palevioletred	#DB7093	219,112,147
+ 	 	papayawhip	#FFEFD5	255,239,213
+ 	 	peachpuff	#FFDAB9	255,218,185
+ 	 	peru	#CD853F	205,133,63
+ 	 	plum	#DDA0DD	221,160,221
+ 	 	powderblue	#B0E0E6	176,224,230
+ 	 	purple	#800080	128,0,128
+ 	 	rosybrown	#BC8F8F	188,143,143
+ 	 	royalblue	#4169E1	65,105,225
+ 	 	saddlebrown	#8B4513	139,69,19
+ 	 	salmon	#FA8072	250,128,114
+ 	 	sandybrown	#F4A460	244,164,96
+ 	 	seagreen	#2E8B57	46,139,87
+ 	 	seashell	#FFF5EE	255,245,238
+ 	 	sienna	#A0522D	160,82,45
+ 	 	silver	#C0C0C0	192,192,192
+ 	 	skyblue	#87CEEB	135,206,235
+ 	 	slateblue	#6A5ACD	106,90,205
+ 	 	slategray	#708090	112,128,144
+ 	 	snow	#FFFAFA	255,250,250
+ 	 	springgreen	#00FF7F	0,255,127
+ 	 	steelblue	#4682B4	70,130,180
+ 	 	tan	#D2B48C	210,180,140
+ 	 	thistle	#D8BFD8	216,191,216
+ 	 	tomato	#FF6347	255,99,71
+ 	 	turquoise	#40E0D0	64,224,208
+ 	 	violet	#EE82EE	238,130,238
+ 	 	wheat	#F5DEB3	245,222,179
+ 	 	white	#FFFFFF	255,255,255
+ 	 	whitesmoke	#F5F5F5	245,245,245
+
+*/
+}

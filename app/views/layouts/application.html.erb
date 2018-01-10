@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blogging</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application' %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+  	<%= render 'layouts/partials/head' %>
   </head>
-
   <body>
-  <div class="main"> 		
-  <div class="header"> 	
+  <div class="wrapper" id='wrapper'> 		
+  <header> 	
   	<%= render 'layouts/partials/topnavbar' %>
   	<%= render 'layouts/partials/flash' %>
-  </div>
-  <div class="menu">
-		<%= render 'layouts/partials/menu' %>
-  </div>
-  <div class="content">
+  </header>
+  <aside1>RGB COLORS</aside1>
+  <asidenav>
+    <%= render 'layouts/partials/asidenav' %>
+  </asidenav>
+ 
     <%= yield %>
-	</div>
-	<div class="footer">
-	<%= render 'layouts/partials/footer' %>
- 	</div>
+
+  <aside2>RGB COLORS AS CSS VARIABLES FOR WEB DESIGN AND DEVELOPMENT</aside2>
+  <aside3>ASIDE 3</aside3>
+	<footer>
+	  <%= render 'layouts/partials/footer' %>
+ 	</footer>
  </div>
   </body>
-
 </html>

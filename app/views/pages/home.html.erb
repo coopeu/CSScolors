@@ -1,18 +1,58 @@
-<div class="grid">
-    <div class="box">
-      <h2 class='title'>Products</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod ullam necessitatibus itaque quisquam incidunt obcaecati temporibus sint nulla exercitationem.</p>
-    </div>
-    <div class="box">
-      <h2>Services</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod ullam necessitatibus itaque quisquam incidunt obcaecati temporibus sint nulla exercitationem.</p>
-    </div>
-    <div class="box">
-      <h2>About us</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod ullam necessitatibus itaque quisquam incidunt obcaecati temporibus sint nulla exercitationem.</p>
-    </div>
-    <div class="box">
-      <h2>Contact</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod ullam necessitatibus itaque quisquam incidunt obcaecati temporibus sint nulla exercitationem.</p>
-    </div>
+<main>HOME - MAIN - CSS-GRID
+ <div class='central'> 
+    <article>
+      <h3>APP description...</h3>
+      <p>Complex and responsible CSS GRID layouts examples using easily CSS variables for main color scales. The :root CSS file includes the  of RGBcolors codes. This demo (in development) is integrating Bulma CSS components for a simple blogging Ruby on Rails website.</p>
+    </article>
+    <article>
+      <h3>BACK-END environment...</h3>
+      <p>OVZ6 SERVER (Amsterdam), Debian GNU/Linux 9 (stretch), Linux 4.9.0-1-amd64, x86-64. Apache 2.4.25 (Debian). Mysql 15.1 Distrib 10.1.26-MariaDB, debian-linux-gnu (x86_64), readline 5.2. Phusion Passenger 5.1.12. Rvm 1.29.3. Ruby 2.4.3p205 (2017-12-14 revision 61247) [x86_64-linux]. Rails 5.1.4. Yarn v1.3.2. Npm 3.10.10. Webpack 3.10.0</p>
+    </article>
+    <article>
+      <h3>RGB colors codes problem and proposed solution...</h3>
+      <p>Never more, you will have to use complicated RGB codes to find the suitable color and tone, picking or consulting the colors, and copying and pasting the RGB codes to the CSS files.</p>
+      <p>The tones of each of the several color scales (grays, yellows, oranges, reds, maroons, purples, violets/fuchsias, greens, olives, teals/turquoises, limes, blues, navies, sky, pinks,...) that included +300 RGB colors, starts at 01 close to white and ends close to black, jumping in small tone steps from light to dark.</p>
+      <p>This extends the W3C list of basic and extended colors keywords: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white and yellow, for using easily and quickly RGB colors codes by means of CSS variables, saving time and speeding up the web design and front-end development.</p>
+    </article>
+    <article>
+      <h3>The RGBcolors file...</h3>
+      <%= image_tag('RGBcolors.png') %>
+      <%#= link_to image_tag("RGBcolors.png"), root_path %>
+    </article>
+    <article>
+      <h3Installation and instructions...</h3>
+      <p>Import and integrate root css file at /app/assets/stylesheets/root.scss in your application. If RoR import in your application.css or save in the /assets/stylesheets folder or by any (npm, yarn,..) package manager. This is all. Look at the file to know the scale names (grays, pinks, browns,...) for only remembering them when you're choosing a CSS element color (color:var(--yellow10;) or you're personalising your palette or web theme. Change +1/-1 the Css variable number for adjusting the color tone, +1 darker (--yellow11) and -1 lighter (--yellow09).</p>
+    </article>
+    <article>
+      <h3>Examples...</h3>
+      <p>It's simply, e.g. choose for a DIV element the background color and tone for instance (violet08) as background-color:var(--violet08). In case that you want the web result darkering a bit more change for --viole09 or violet10 and otherwise if you want lighting reduce this number to violet07 or violet 06.
+      <br/>Sample in a CSS file:
+      <br/>div {
+      <br/>background-color:var(--teal04);
+      <br/>color:var(--teal20);
+      <br/>border: 1px solid var(--teal 08);
+      <br/>}</p>
+    </article>
+    <article>
+      <h3>Links...</h3>
+      <ul>
+        <li><%= link_to 'W3C color Specidications:','https://www.w3.org/TR/2011/REC-css3-color-20110607/' %> </li>
+        <li><%= link_to 'Color scales:', 'http://www.colorhexa.com/800080' %> </li>
+        <li><%= link_to 'Live demo (in development):', 'http://cabrer.me:8888/posts'%> </li>
+        <li><%= link_to 'Github Repository','https://github.com/coopeu/Blogging' %> 
+      </ul>  
+    </article>
+    <article>
+      <h3>Contributions...</h3>
+      <ul>Fork the repository 
+        <li>Create your feature branch (git checkout -b my-new-feature)</li>
+        <li>Commit your changes (git commit -am 'Add some feature')</li>
+        <li>Push to the branch (git push origin my-new-feature)</li>
+        <li>Create new Pull Request</li>
+      </ul>
+      <ul>Post an issue</ul>
+      <ul>Send a message</ul>       
+    </article>  
+
   </div>
+</main>

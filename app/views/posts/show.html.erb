@@ -1,11 +1,29 @@
-<div class="container is-fluid">
+<div class="container is-fluid show">
 	<div class='post'>
-		<h6 class='teal'><%= @post.title %></h6>
+		<h3><%= @post.title %></h3>
 		<p class='is-size-7'>created <%= time_ago_in_words(@post.created_at) %> ago</p>
 		<p class='is-size-5'><%= @post.body %></p>
 		<p>
-			<%= link_to 'Edit', edit_post_path(@post), class: 'small button is-primary is-outlined' %>
-				<%= link_to 'Delete', post_path(@post), method: :delete, class: 'small button is-danger is-outlined' %>
+			<%= link_to 'Edit', edit_post_path(@post), class: 'small button is-primary' %>
+				<%= link_to 'Delete', post_path(@post), method: :delete, class: 'small button' %>
 		</p>
+	</div>
+	<div class='comments'>
+		<h3>Comments</h3>
+		<%= @post.comments.each do |c| %>
+			<p><%= c.body %></p>
+			<p class='is-size-7'>created <%= time_ago_in_words(c.created_at) %> ago</p>
+		<% end %>
+	</div>
+	<div class='comments'>
+		<div class='field'>
+			<%= form_for [@post, @post.comments.build] do |f| %>
+			<h3>Add a new comment</h3>
+			<div class="control">
+				<%= f.text_area :body, class:'textarea' %>
+				<%= f.submit 'Send', class:'small button is-primary' %>
+			</div>
+			<% end %>
+		</div>
 	</div>
 </div>

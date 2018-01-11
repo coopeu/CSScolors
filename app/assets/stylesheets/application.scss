@@ -70,13 +70,15 @@ header {
 }
 main {
   grid-area: ma;
-  color:var(--olive11);
+  color:var(--olive16);
   text-align: center;
   font-weight: 900;
+  margin:0;
 }
+/* HOME */
 .central {
   display:grid;
-  grid-template-columns: repeat(2,50%);
+	grid-template-columns: repeat(2,50%);
   text-align: justify;
 }
 article {
@@ -90,18 +92,51 @@ article h3 {
 	margin: 0 0 10px 5px ;
   font-weight: bold;
 }
+  /* POSTS */
+section {  
+  text-align: justify;
+  font-weight: 600;
+  margin: 5px;
+}
+.cols {
+  display:grid;
+  grid-template-columns:30% 70%;
+  /*grid-gap: 5px;*/
+}
+.col {
+  background-color: var(--olive01);
+  border: 3px solid var(--sky02);
+  /*padding: 6px;*/
+}
+.col h3, .post h3, .comments h3, .comment h3 {
+  color:var(--sea08);
+  margin: 0 0 15px 5px;
+  font-weight: bold;  
+  font-size: 120%;
+}
+.col .ref {
+  font-size: 80%;
+}
+.col .button, .post .button {
+  background-color:var(--red04);
+  margin-top:25px;
+}
+.col2{
+  padding: 5px;
+  font-size: 90%;
+}
 aside1 {
 	grid-area: a1;
   background-color:var(--olive13);
   color:var(--sea00);
   font-weight: bold; /*700*/
-  padding-left: 10px;
+  padding-left: 10px; 
 }
 asidenav {
 	grid-area: an;  
   background-color:var(--teal12);
   color:var(--teal05);
-  padding: 6px;
+  padding: 6px; 
 }
 aside2 {
 	grid-area: a2;
@@ -217,13 +252,37 @@ label {
         display: block;
     }   
 }
-
-
-
-
-
-
-
-
+.show {
+  padding:10px;
+  color:var(--sky02);
+  text-align: justify;
+}
+.post {
+  font-weight:500;
+  margin-bottom: 20px;
+}
+.comments {
+  font-weight:400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.comments p {
+  font-style: oblique;
+  font-weight: 500;
+  font-stretch: expanded;
+}
+.comment {
+  margin-top: 20px;
+}
+.control {
+  width:80%;
+}
+.control .textarea{
+  background-color:var(--sky04);
+}
+.control .button {
+  background-color:var(--olive04);
+  margin-top:10px;
+}
 
 

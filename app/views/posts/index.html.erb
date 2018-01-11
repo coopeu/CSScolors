@@ -1,15 +1,18 @@
-<div class="container is-fluid">
+<section>
 	<% @posts.each do |p| %>
-	<div class='post'>
-		<div class='columns'>
-			<div class='column is-one-quarter'><h6 class='teal'><%= link_to p.title, post_path(p) %></h6>
-				<p class='is-size-7'>created <%= time_ago_in_words(p.created_at) %> ago</p>
-				<%= link_to 'Edit', edit_post_path(p), class: 'small button is-primary is-outlined' %>
-				<%= link_to 'Delete', post_path(p), method: :delete, class: 'small button is-danger is-outlined' %>
-			</div>
-			<div class="column has-text-justified"><p class='is-size-5'><%= p.body %></p></div>	
-		</div>
+		<div class='cols'>
+			<div class='col col1'>
+				<h3><%= link_to p.title, post_path(p) %></h3>
+				<p class='ref'>created <%= time_ago_in_words(p.created_at) %> ago</p>
+				<p class='tag'><%= p.tags.each do |t| %>
+					 &nbsp<%= t.name %>, 
+					<% end %>
+				</p>
 
-	</div> 
+				<%= link_to 'Edit', edit_post_path(p), class: 'is-small button' %>
+				<%= link_to 'Delete', post_path(p), method: :delete, class: 'is-small button' %>
+			</div>
+			<div class="col col2"><p class=''><%= p.body %></p></div>	
+		</div>
 	<% end %>
-</div>
+</section>

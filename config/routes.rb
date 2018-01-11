@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   
-  resources :posts
+  get 'comments/create'
+
+  resources :posts do 
+  	resources :comments	
+  end
+
   root 'pages#home'
 	resources :pages
 	get 'about',	to: :about, controller: 'pages'

@@ -9,8 +9,9 @@
 	  <div class='field'>
 	     <label class="label"><%= f.label :body %></label>
 			<div class="control">
-				<%= f.text_area :body, placeholder: 'The title is...', class: 'textarea' %>				
+				<%= f.text_area :body, placeholder: 'The title is...', class: 'textarea' %>
 			</div>
+			<%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name, class: 'checkbox' %>
 	  </div>
 		<div class="field is-grouped">
 		  <div class="control">

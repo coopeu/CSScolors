@@ -4,5 +4,8 @@
   --white: var(--sky03); 
   --ff-ss: 'Merriweather Sans', sans-serif;
   --ff-s: 'Merriweather', serif;  
-  --fc: var(--dark);  
+  --fc: var(--dark);
 } /* ./root */ 
+.indent { 
+	text-indent: 1em; 
+}  	

@@ -11,7 +11,7 @@ body {
   background-color:var(--sea00);
   width:100%;
   height:100%;
-  margin: 0;       
+  margin: 0;      
 }
 .wrapper{
   display:grid;
@@ -113,6 +113,7 @@ section {
   margin: 0 0 15px 5px;
   font-weight: bold;  
   font-size: 120%;
+  text-align:left;
 }
 .col .ref {
   font-size: 80%;
@@ -277,12 +278,31 @@ label {
 .control {
   width:80%;
 }
-.control .textarea{
-  background-color:var(--sky04);
+input.control, .control .textarea{
+  background-color:var(--sky03);
+  border: 0;
 }
 .control .button {
   background-color:var(--olive04);
   margin-top:10px;
 }
+/**** BACKEND ****/
+.colsBE {
+  display:grid;
+  grid-template-columns:50% 50%;
+  /*grid-gap: 5px;*/
+}
+.backend{
+  background-color:var(--gray22);
+  color:var(--orange02);
+  text-align:left;
+  font-weight: 400;
+  padding-left:20px;
+  font-size:80%;
+}
+colBE{
+  
+}
+
 
 

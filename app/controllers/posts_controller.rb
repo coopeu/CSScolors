@@ -1,19 +1,26 @@
 class PostsController < ApplicationController
 
 	def index
-		@posts = Post.order('updated_at DESC').all
+		@posts = if params[:tag]
+		 	@posts = Post.tagged_with(params[:tag])
+		else	
+			@posts = Post.order('updated_at DESC').all
+		end
 	end
+	
 	def new
 		@post = Post.new
 	end
+	
 	def create
 		@post = Post.new(post_params)
 		if @post.save
-			redirect_to posts_path
+			redirect_to @post, notice: 'Created post'
 		else
-			#
+			render :new
 		end
 	end
+	
 	def show
 		@post = Post.where(id: params[:id]).first
 	end
@@ -25,9 +32,9 @@ class PostsController < ApplicationController
 	def update
 		@post = Post.where(id: params[:id]).first
 		if @post.update_attributes(post_params)
-			redirect_to posts_path
+			redirect_to posts_path, notice: 'Update post successfully'
 		else
-			# render the edit form again
+			render edit
 		end	
 	end
 	def destroy
@@ -35,12 +42,13 @@ class PostsController < ApplicationController
 		if @post.destroy
 			redirect_to posts_path
 		else
-			# render the destroy form again
+			render show
 		end	
 	end	
+
 private
 	def post_params
-		params.require(:post).permit(:title, :body)
+		params.require(:post).permit(:title, :body, :tag_list) #:tag_ids => [],
 	end	
 
 end

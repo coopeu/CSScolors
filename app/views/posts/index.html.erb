@@ -4,13 +4,12 @@
 			<div class='col col1'>
 				<h3><%= link_to p.title, post_path(p) %></h3>
 				<p class='ref'>created <%= time_ago_in_words(p.created_at) %> ago</p>
-				<p class='tag'><%= p.tags.each do |t| %>
-					 &nbsp<%= t.name %>, 
-					<% end %>
+				<p class='tag'>Tags: <%= raw p.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %>
 				</p>
-
+				<div class='buttons'>	
 				<%= link_to 'Edit', edit_post_path(p), class: 'is-small button' %>
 				<%= link_to 'Delete', post_path(p), method: :delete, class: 'is-small button' %>
+				</div>
 			</div>
 			<div class="col col2"><p class=''><%= p.body %></p></div>	
 		</div>

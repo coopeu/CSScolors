@@ -6,20 +6,34 @@
 	    	<%= f.text_field :title, class: 'control' %>
 	    </div>
 	  </div>
+	  
 	  <div class='field'>
 	     <label class="label"><%= f.label :body %></label>
 			<div class="control">
 				<%= f.text_area :body, placeholder: 'The title is...', class: 'textarea' %>
 			</div>
-			<%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name, class: 'checkbox' %>
-	  </div>
-		<div class="field is-grouped">
-		  <div class="control">
-		    <%= f.submit "Save", class: "button is-primary" %>
-		  </div>
-		  <div class="control">
-		    <button class="button is-text">Cancel</button>
-		  </div>
 		</div>
+		<div class='tags'>
+			<%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name, class: 'checkbox' do |t| %>
+			<div class="field">
+				<label class='control tag'><input type='checkbox' class='tag'><%= t.text %></label>
+			</div>			
+			<% end %>
+		</div>
+		<div class="label">
+    	<%= f.label :tag_list, "Tags (separated by commas)", class: 'control tag' %><br />
+    	<%= f.text_field :tag_list, class: 'field tag' %>
+  	</div>			
+		<%#= f.collection_check_boxes :tag_ids, Tag.all, :id, :name, class: 'checkbox' do |t| %>
+					<%#= t.label do %>
+						<%#= t.check_box %><%#= t.text %>
+					<%# end %>
+			<%# end %>
+		<div class="field"> 
+		  <div class="control">
+		    <%= f.submit "Save", class: "button btn0" %>
+		    <button class="button btn1">Cancel</button>
+		</div>
+	</div>
 	<% end %>
 </div>

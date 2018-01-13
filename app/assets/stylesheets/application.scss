@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:800|Merriweather:300');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css");
 @import'root';
 @import'RGBcolors';
 /*
@@ -300,9 +302,35 @@ input.control, .control .textarea{
   padding-left:20px;
   font-size:80%;
 }
-colBE{
-  
+.buttons{
+  float:right;
+  padding:5px;
+  margin-top:5px;  
 }
-
-
-
+.tags{
+  float:left;
+  background-color:white;
+  width:100%;
+  padding-left:30px;  
+  /*display:grid;
+  grid-template-columns:repeat(6 16%);*/
+}
+.tag{
+  font-size:90%;
+  font-weight:400;
+  /*margin:5px 5px 0 5px;*/
+  margin:5px;
+}
+.bt0{
+  background-color:var(--olive04);
+}
+button .bt1{
+  background-color:var(--red05);
+}
+#tag_cloud {
+  width: 400px;
+  line-height: 1.6em;
+  .s { font-size: 0.8em; }
+  .m { font-size: 1.2em; }
+  .l { font-size: 1.8em; }
+}

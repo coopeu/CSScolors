@@ -3,6 +3,8 @@
 		<h3><%= @post.title %></h3>
 		<p class='is-size-7'>created <%= time_ago_in_words(@post.created_at) %> ago</p>
 		<p class='is-size-5'><%= @post.body %></p>
+		<p class='tag'>Tags: <%= raw @post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %>
+		</p>
 		<p>
 			<%= link_to 'Edit', edit_post_path(@post), class: 'small button is-primary' %>
 				<%= link_to 'Delete', post_path(@post), method: :delete, class: 'small button' %>

@@ -21,11 +21,31 @@ body {
 header {
   background-color:var(--sky08);
 }
-.grid {
-	justify-items: center;
+.grids{
+  width:100%;
+  font-size:85%; 
+  text-align:center; 
+  padding:2px;
 }
-.grid p {
-	color: var(--sea00);
+.grid1{
+  display:grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: minmax(25px,auto);  
+}
+.grid2{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  width:100%;
+}
+.grid3{
+  display:grid;
+  grid-template-columns: repeat(7, 1fr);
+  width:100%;
+}
+.grid4{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  width:100%;
 }
 main {
   text-align:center;
@@ -105,8 +125,12 @@ aside1 {
   font-weight: 900; 
   padding: 2px 0 0 12px;
   text-shadow:var(--olive25) 0.2em 0.2em 0.3em, var(--olive25) 0.2em 0.2em 0.5em, var(--olive25) 0.2em 0.2em 0.2em;
-  height:40px;
-  border: 2px solid var(--olive25);
+  height:45px;
+  border-top:2px solid var(--olive20);
+  border-right:4px solid var(--olive23);
+  border-bottom:4px solid var(--olive24);
+  border-left:2px var(--olive20);
+  border-radius: 3px;
 }
 asidenav1 {
   background-color:var(--gray12);

@@ -31,7 +31,7 @@
 	"a2  a2  a2  ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
   "a3  a3  a3  ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
 	"fo  fo  fo  fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo"
-  "s  s   s   s   s  s  s  s  s  s  s  s  s  s  s  s  s  s  s "
+  "s   s   s   s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s "
   ;
   width: 100%;
   max-width: 960px;
@@ -44,10 +44,6 @@
 }
 header {
 	grid-area: he;
-}
-.grid {
-	display:grid;
-	grid-template-columns: repeat(18,1fr);
 }
 main {
   grid-area: ma;

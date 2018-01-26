@@ -60,7 +60,7 @@ main h2{
   color:var(--blue02);
   text-shadow:-1px 0 var(--navy22), 0 2px var(--navy22), 2px 0 var(--navy22), 0 -1px var(--navy22);
   font-weight:900;
-  font-size:110%;
+  font-size:120%;
   line-height:180%;
 }
 article {
@@ -137,10 +137,11 @@ asidenav1 {
   padding: 6px; 
 }
 .asidenav1 p{
-  color:var(--gray04);
-  font-weight: bold; /*700*/
-  text-shadow:var(--gray26) 0.1em 0.1em 0.3em;
+  color:var(--gray03);
+  text-shadow:var(--gray25) 0.1em 0.1em 0.3em, var(--gray25) 0.2em 0.2em 0.5em, var(--gray25) 0.2em 0.2em 0.2em;
+  font-weight: 900;
   margin-bottom:15px;
+  font-size:90%;
 }
 .asidenav1 li,.asidenav2 li,.asidenav3 li{
   margin-bottom:5px;
@@ -150,10 +151,11 @@ asidenav2 {
   padding: 6px; 
 }
 .asidenav2 p{
-  color:var(--teal04);
-  text-shadow:var(--teal25) 0.1em 0.1em 0.3em;
-  font-weight: bold; /*700*/
+  color:var(--teal03);
+  text-shadow:var(--teal25) 0.2em 0.2em 0.5em, var(--teal25) 0.2em 0.2em 0.5em, var(--teal25) 0.2em 0.2em 0.2em;
+  font-weight: 900;
   margin-bottom:15px;
+  font-size:90%;
 }
 asidenav3 {
 	background-color:var(--red18);

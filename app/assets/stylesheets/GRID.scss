@@ -1,0 +1,114 @@
+.wrapper{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: minmax(50px,auto);
+  grid-gap: 5px;
+  grid-template-areas:
+  "he  he  he  he  he  he"
+  "ma  ma  ma  ma  ma  ma"
+	"an1 an1 an2 an2 an3 an3"
+  "a1  a2  a2  a3  a3  a3"
+  "a1  a2  a2  a3  a3  a3"
+  "fo  fo  fo  fo  fo  fo"
+  "s   s   s   s   s   s"
+	;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 790px) {
+.wrapper{
+  display:grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: minmax(50px,auto);
+  grid-gap: 5px;
+  grid-template-areas:
+  "he  he  he  he he he he he he he he he he he he he he he he"
+  "a1  a1  a1  ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+  "an1 an1 an1 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+  "an2 an2 an2 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+	"an3 an3 an3 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+  "an3 an3 an3 ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+	"a2  a2  a2  ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+  "a3  a3  a3  ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma ma"
+	"fo  fo  fo  fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo fo"
+  "s  s   s   s   s  s  s  s  s  s  s  s  s  s  s  s  s  s  s "
+  ;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+	}
+}
+.wrapper > * {
+  /*background-color: #880;*/
+  /*padding: 10px;*/
+}
+header {
+	grid-area: he;
+}
+.grid {
+	display:grid;
+	grid-template-columns: repeat(18,1fr);
+}
+main {
+  grid-area: ma;
+}
+/* HOME */
+.central {
+  display:grid;
+	grid-template-columns:repeat(2,50%);
+}
+.colsBLOG {
+  display:grid;
+  grid-template-columns:30% 70%;
+}
+aside1 {
+	grid-area: a1;
+}
+asidenav1 {
+	grid-area: an1;  
+}
+asidenav2 {
+	grid-area: an2;  
+}
+asidenav3 {
+	grid-area: an3;  
+}
+aside2 {
+	grid-area: a2;
+}
+aside3 {
+  grid-area: a3;
+}
+footer {
+	grid-area: fo;
+}
+.footernavs{
+  display:grid;
+  grid-template-columns:repeat(4,25%);
+}
+.social{
+  grid-area:s;
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  line-height: 50px;
+  width:100%;
+}
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .topmenu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .topmenu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;    
+    }
+    #toggle:checked + .topmenu {
+        display: block;
+    }   
+}

@@ -1,0 +1,154 @@
+/* CSSTerm.com Simple CSS menu */
+
+.sidebar ul {
+    margin: 0; 
+    padding: 0;
+    list-style-type: none;
+}
+
+.asidebar li {
+    display:block;
+    width:100px;
+    margin-bottom:10px;
+}
+a.grays{
+   color:var(--gray03);  
+   background-color:var(--gray13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--gray24) 0.1em 0.1em 0.25em; 
+}
+a.reds{
+   color:var(--red03);  
+   background-color:var(--red16);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--red24) 0.1em 0.1em 0.25em; 
+}
+a.yellows{
+   color:var(--yellow02);  
+   background-color:var(--yellow13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--yellow25) 0.1em 0.1em 0.25em; 
+}
+a.blues{
+   color:var(--blue02);  
+   background-color:var(--blue16);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--blue24) 0.1em 0.1em 0.25em; 
+}
+a.greens{
+   color:var(--green03);  
+   background-color:var(--green13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--green24) 0.1em 0.1em 0.25em; 
+}
+a.oranges{
+   color:var(--orange03);  
+   background-color:var(--orange13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--orange24) 0.1em 0.1em 0.25em; 
+}
+a.violets{
+   color:var(--violet03);  
+   background-color:var(--violet13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--violet24) 0.1em 0.1em 0.25em; 
+}
+a.purples{
+   color:var(--purple03);  
+   background-color:var(--purple13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--purple24) 0.1em 0.1em 0.25em; 
+}
+a.pinks{
+   color:var(--pink03);  
+   background-color:var(--pink13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--pink24) 0.1em 0.1em 0.25em; 
+}
+a.crimsons{
+   color:var(--crimson03);  
+   background-color:var(--crimson12);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--crimson26) 0.1em 0.1em 0.25em; 
+}
+a.browns{
+   color:var(--brown03);  
+   background-color:var(--brown16);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--brown26) 0.1em 0.1em 0.25em; 
+}
+a.beiges{
+   color:var(--beige03);  
+   background-color:var(--beige13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--beige27) 0.1em 0.1em 0.25em; 
+}
+a.golds{
+   color:var(--gold03);  
+   background-color:var(--gold13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--gold24) 0.1em 0.1em 0.25em; 
+}
+a.olives{
+   color:var(--olive03);  
+   background-color:var(--olive13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--olive24) 0.1em 0.1em 0.25em; 
+}
+a.teals{
+   color:var(--teal03);  
+   background-color:var(--teal13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--teal24) 0.1em 0.1em 0.25em; 
+}
+a.aquas{
+   color:var(--aqua03);  
+   background-color:var(--aqua13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--aqua24) 0.1em 0.1em 0.25em; 
+}
+a.aquamarines{
+   color:var(--aquamarine03);  
+   background-color:var(--aquamarine13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--aquamarine24) 0.1em 0.1em 0.25em; 
+}
+a.navys{
+   color:var(--navy03);  
+   background-color:var(--navy13);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--navy24) 0.1em 0.1em 0.25em; 
+}
+a.seas-skys{
+   color:var(--sky02);  
+   background-color:var(--sea08);
+   padding: 0px 7px 2px 5px;
+   font-weight: 700;
+   text-shadow:var(--sea10) 0.1em 0.1em 0.25em; 
+}
+.sidebar ul li a:visited {
+    color: white;
+}
+ 
+.sidebar ul li a:hover, .menu_simple ul li .current {
+    color: white;
+    background-color: #5FD367;
+}

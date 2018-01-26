@@ -1,0 +1,12 @@
+<%= form_tag sessions_path do %>
+
+
+<div class="login">
+	<h1>Log in</h1>
+  <%= text_field_tag :email, "", placeholder: 'Email', class: 'input' %>  
+  <%= text_field_tag :password_digest, "", placeholder: 'Password (min 6 characters)', class: 'input' %>
+  <a href="#" class="forgot">forgot password?</a>
+  <%= submit_tag 'Submit', class:'button' %>
+</div>
+
+<% end %>

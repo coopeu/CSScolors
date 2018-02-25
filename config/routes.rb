@@ -16,8 +16,14 @@ Rails.application.routes.draw do
   get 'colorcodes',  to: :colorcodes, controller: 'pages'
   get 'colornames',  to: :colornames, controller: 'pages'
   get 'colorvariations',  to: :colorvariations, controller: 'pages'
+  get 'basic_scale',  to: :basic_scale, controller: 'pages'
+	get 'scale_blue_aqua',	to: :scale_blue_aqua, controller: 'pages'
 
-	get 'about',	to: :about, controller: 'pages'
+
+  get 'scale_blue_green', to: :scale_blue_green, controller: 'pages'
+
+
+  get 'about',  to: :about, controller: 'pages'
 	get 'products',	to: :products, controller: 'pages'
 	get 'contact',	to: :contact, controller: 'pages'
 

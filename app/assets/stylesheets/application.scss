@@ -60,8 +60,34 @@ main h2{
   color:var(--blue02);
   text-shadow:-1px 0 var(--navy22), 0 2px var(--navy22), 2px 0 var(--navy22), 0 -1px var(--navy22);
   font-weight:900;
-  font-size:120%;
-  line-height:180%;
+  font-size:130%;
+  line-height:50px;
+}
+.button {
+background-color: var(--olive22);
+border: 3px solid var(--olive25);
+border-radius: 3px;
+color: var(--olive02);
+box-shadow: var(--olive10) 0 2px 5px;
+height:40px;
+width: 100%; 
+padding: 0 5 25px 5;
+text-align: center;
+text-decoration: none;
+/*text-shadow:var(--olive01) 0.1em 0.1em 0.2em;*/
+display: inline-block;
+font-size: 16px;
+margin: 15px 4px 4px 4px;
+cursor: pointer;
+left: 0;
+position: relative;
+top: 0;
+
+}
+.button:hover {
+background-color: var(--olive02);
+color: var(--olive25);  
+font-weight: 800;
 }
 article {
 	background-color: var(--olive04);

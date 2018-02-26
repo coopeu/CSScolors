@@ -82,12 +82,19 @@ footer {
   display:grid;
   grid-template-columns:repeat(4,25%);
 }
+.footernavs2{
+  display:grid;
+  grid-template-columns:repeat(2,50%);
+}
 .social{
   grid-area:s;
   display:grid;
   grid-template-columns:repeat(8,1fr);
   line-height: 50px;
   width:100%;
+}
+.cc{
+  text-size:10pt;
 }
 @media only screen and (max-width: 500px) {
     label {

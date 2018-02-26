@@ -23,14 +23,13 @@ header {
 }
 .grids{
   width:100%;
-  font-size:85%; 
+  font-size:70%; 
   text-align:center; 
   padding:2px;
 }
 .grid1{
   display:grid;
-  grid-template-columns: repeat(18,1fr);
-  grid-template-rows: minmax(25px,auto);  
+  grid-template-columns: repeat(18,1fr); 
 }
 .grid2{
   display:grid;
@@ -60,8 +59,8 @@ main h2{
   color:var(--blue02);
   text-shadow:-1px 0 var(--navy22), 0 2px var(--navy22), 2px 0 var(--navy22), 0 -1px var(--navy22);
   font-weight:900;
-  font-size:130%;
-  line-height:50px;
+  font-size:140%;
+  line-height:60px;
 }
 .button {
 background-color: var(--olive22);
@@ -91,16 +90,24 @@ font-weight: 800;
 }
 article {
 	background-color: var(--olive04);
-  color:var(--olive22);
+  color:var(--olive23);
 	border: 3px solid var(--sky05);
-	padding: 10px;
-  font-weight: 600;
-}
-h3.article {
 	margin: 0 0 10px 10px ;
+  font-weight: 600;
+  font-size:80%;	
+  padding:10px;
+}
+img.logo{
+	vertical-align:middle;
+  }
+h3.article {
+	margin: 0 0 25px 5px;
   font-weight: 900;
   color:var(--olive24);
-  text-shadow:var(--olive01) 0.1em 0.1em 0.2em;   
+  text-shadow:var(--olive01) 0.1em 0.1em 0.2em;
+  line-heihgt:130%;
+  font-size:130%;
+  display:inline;  
   }
   /* POSTS */
 section {  
@@ -152,29 +159,42 @@ aside1 {
   padding: 2px 0 0 12px;
   text-shadow:var(--olive25) 0.2em 0.2em 0.3em, var(--olive25) 0.2em 0.2em 0.5em, var(--olive25) 0.2em 0.2em 0.2em;
   height:45px;
-  border-top:2px solid var(--olive20);
-  border-right:4px solid var(--olive23);
-  border-bottom:4px solid var(--olive24);
-  border-left:2px var(--olive20);
+  border-top:2px solid var(--olive04);
+  border-right:4px solid var(--olive20);
+  border-bottom:4px solid var(--olive20);
+  border-left:2px solid var(--olive04);
   border-radius: 3px;
+  margin-bottom:10px; 
 }
 asidenav1 {
   background-color:var(--gray12);
-  padding: 6px; 
+  padding: 6px;
+  border-top:2px solid var(--gray04);
+  border-right:4px solid var(--gray20);
+  border-bottom:4px solid var(--gray20);
+  border-left:2px solid var(--gray04);
+  border-radius: 3px;
+  margin-bottom:10px; 
 }
 .asidenav1 p{
   color:var(--gray03);
   text-shadow:var(--gray25) 0.1em 0.1em 0.3em, var(--gray25) 0.2em 0.2em 0.5em, var(--gray25) 0.2em 0.2em 0.2em;
   font-weight: 900;
-  margin-bottom:15px;
+  margin-bottom:20px;
   font-size:90%;
 }
 .asidenav1 li,.asidenav2 li,.asidenav3 li{
   margin-bottom:5px;
 }
 asidenav2 {
-	background-color:var(--teal2);
-  padding: 6px; 
+	background-color:var(--teal18);
+  padding: 6px;
+  border-top:2px solid var(--teal04);
+  border-right:4px solid var(--teal20);
+  border-bottom:4px solid var(--teal20);
+  border-left:2px solid var(--teal04);
+  border-radius: 3px;
+  margin-bottom:10px;  
 }
 .asidenav2 p{
   color:var(--teal03);
@@ -186,6 +206,12 @@ asidenav2 {
 asidenav3 {
 	background-color:var(--red18);
   padding: 6px;
+  border-top:2px solid var(--red04);
+  border-right:4px solid var(--red20);
+  border-bottom:4px solid var(--red20);
+  border-left:2px solid var(--red04);
+  border-radius: 3px;
+  margin-bottom:10px;
 }
 .asidenav3 p{
   color:var(--red03);
@@ -212,7 +238,7 @@ aside3 {
 /* menu base styles */
 .footnav{
   justify-items:center;
-  background-color:var(--navy15);
+  background-color:var(--navy20);
 }
 .footnav ul{
   list-style-type: none;
@@ -228,43 +254,46 @@ aside3 {
 .footnav a:hover{
   color: var(--olive05);
 }
-/* social menu base styles */
-a.tw{
-  background: url(tw.png) no-repeat center;
-  background-size: 80%;  
-}
-a.fb{
-  background: url(fb.png) no-repeat center;
-  background-size: 80%;
-}
-.social a{
-  /*text-indent: -10000px;
-  margin: 0 auto;*/
-}
-.social{
-  /*max-width: 80px;*/
-  /*margin: 0 auto; /* do at end */
-  line-height: 50px;
+.cc{
+  background-color:var(--navy18);
+	color:var(--navy08);
+  font-size:9px;
   width:100%;
+  text-align: center;
+  padding:20px;
+  height:100px; 
+  display: inline-block;
+}
+.cc img{
+	vertical-align:middle;
+	margin-right:10px;
 }
 .topnav {
-    background-color:var(--teal20);
+    background-color:var(--teal23);
     border-bottom: 1px solid var(--teal08);
-    text-align: right;
-    height: auto;
-    line-height: auto;
+    line-height: auto; 
+    margin:0 30px 0 0;
+    padding:10px 0 15px 0;
+    display: inline-block;
+    width:100%;
 }
-.topmenu {
-    margin: 0 30px 0 0;
+.topmenu1{ 
+    text-align: left; float:left; display: inline;
 }
-.topmenu a {
+.topmenu2{ 
+    text-align: center;float:center;display: inline;
+}
+.topmenu3{ 
+    text-align: right;float:right; display: inline;
+}
+.topnav a {
     clear: right;
     text-decoration: none;
     color: var(--teal08);
     margin: 0 10px;
     line-height: auto;
 }
-.topmenu a:hover{
+.topnav a:hover{
   color:var(--sky01);
 }
 span a{

@@ -1,0 +1,25 @@
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width='200px' height='200px'
+	 viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#91D1BB;}
+	.st1{fill:#669933;}
+	.st2{fill:#FFFF00;}
+	.st3{fill:#663399;}
+	.st4{fill:#336699;}
+	.st5{fill:#CC3333;}
+	.st6{fill:#D5519D;}
+</style>
+<g>
+	
+		<animateTransform  accumulate="none" additive="replace" attributeName="transform" attributeType="XML" calcMode="linear" dur="10s" fill="remove" from="0 13.5 13.5" repeatCount="indefinite" restart="always" to="360 13.5 13.5" type="rotate">
+		</animateTransform>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -3.3672 4.5768)" class="st0" cx="13.5" cy="13.5" rx="4.1" ry="4.4"/>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -3.9428 2.1517)" class="st1" cx="5.2" cy="14.2" rx="4.1" ry="4.4"/>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -1.3532 2.7897)" class="st2" cx="8.6" cy="5.9" rx="4.1" ry="4.4"/>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -5.3812 6.3639)" class="st3" cx="18.4" cy="21" rx="4.1" ry="4.4"/>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -2.8637 7.0137)" class="st4" cx="21.8" cy="13" rx="4.1" ry="4.4"/>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -5.9214 3.8599)" class="st5" cx="9.8" cy="21.6" rx="4.1" ry="4.4"/>
+	<ellipse transform="matrix(0.9556 -0.2948 0.2948 0.9556 -0.8129 5.2937)" class="st6" cx="17.2" cy="5.3" rx="4.1" ry="4.4"/>
+</g>
+</svg>
